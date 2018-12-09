@@ -4,15 +4,10 @@ namespace Demo
 {
     public class Christmas
     {
-        public (string type, int price) GetGift()
-        {
-            return ("Toy", 25);
-        }
-
         public void CheckGifts()
         {
-            var gift1 = GetGift();
-            var gift2 = GetGift();
+            var gift1 = ("toy", 25);
+            var gift2 = ("game", 10);
             Console.WriteLine(gift1 == gift2);
         }
     }
@@ -27,6 +22,6 @@ namespace Demo
 //        }
 
 //        public static bool operator ==(ValueTuple<T1, T2> t1, ValueTuple<T1, T2> t2) => true;
-//        public static bool operator !=(ValueTuple<T1, T2> t1, ValueTuple<T1, T2> t2) => true;
+//        public static bool operator !=(ValueTuple<T1, T2> t1, ValueTuple<T1, T2> t2) => false;
 //    }
 //}

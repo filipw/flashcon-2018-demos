@@ -6,17 +6,17 @@ namespace CSharpCompiler.Demos.InvalidProgram
     {
         static void Main(string[] args)
         {
-            var dog = new Dog();
+            var xmas = new Christmas();
         }
     }
 
 
-    struct Animal<T>
+    struct Gift<T>
     {
     }
 
-    struct Dog
+    struct Christmas
     {
-        public Animal<Dog> Classification { get; set; }
+        public Gift<Christmas> WrappedGift { get; set; }
     }
 }

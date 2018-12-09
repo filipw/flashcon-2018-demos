@@ -13,8 +13,14 @@ namespace CSharpCompiler.Demos.OpenGeneric
         {
             var normal = Enum.ToObject(typeof(Gift.Color), 0);
             var weird = Enum.ToObject(typeof(Gift<>.Color), 0);
+
             Console.WriteLine(normal.GetType());
+            Console.WriteLine(normal.GetType().IsGenericTypeDefinition);
+
             Console.WriteLine(weird.GetType());
+            Console.WriteLine(weird.GetType().IsGenericTypeDefinition);
+
+            Console.ReadLine();
         }
     }
 

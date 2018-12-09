@@ -9,9 +9,9 @@ namespace CrazyProgram
     {
         public static void Main(string[] args)
         {
-            //var square = new Square(4);
-            //var calculator = new AreaCalculator();
-            //var area = calculator.Calculate(square);
+            var square = new Square(4);
+            var calculator = new AreaCalculator();
+            var area = calculator.Calculate(square);
             Console.WriteLine($"Square with a side of 4 has an area of {area}");
         }
     }

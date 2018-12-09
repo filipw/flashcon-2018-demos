@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CSharpCompiler.Demos.OpenGeneric
+namespace CSharpCompiler.Demos.StaticReturn
 {
-    public static class Santa { }
+    public static class Gift { }
 
     public interface IChristmas
     {
-        Santa GetSanta();
+        Gift GetGift();
     }
 
     //public class Christmas
     //{
-    //    public Santa GetSanta()
+    //    public Gift GetGift()
     //    {
     //        return null;
     //    }
