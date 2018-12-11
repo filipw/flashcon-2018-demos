@@ -6,16 +6,16 @@ namespace CSharpCompiler.Demos.StaticReturn
 {
     public static class Gift { }
 
-    public interface IChristmas
+    public class Christmas
     {
-        Gift GetGift();
+        public Gift GetGift()
+        {
+            return null;
+        }
     }
 
-    //public class Christmas
+    //public interface IChristmas
     //{
-    //    public Gift GetGift()
-    //    {
-    //        return null;
-    //    }
+    //    Gift GetGift();
     //}
 }
